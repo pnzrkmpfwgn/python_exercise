@@ -76,6 +76,9 @@ for i in range(70):
     Hspeed = 0
     if(tortoise_position > 0):
         while j < tortoise_position:
+            if(Tspeed < 0):
+                T=T-"▪"
+            else:
                 T= T + "▪"
                 j=j+1
         print("T " + T)
@@ -83,6 +86,9 @@ for i in range(70):
         tortoise_position = 0
     if(hare_position > 0):
         while k < hare_position:
+            if(Hspeed < 0):
+                H = H - "▪"
+            else:
                 H= H + "▪"
                 k=k+1
         print("H " + H)
@@ -104,7 +110,7 @@ for i in range(70):
 
 if(b and len(H) > len(T)):
     print("HARE WINS !!")
-else:
+elif(len(T) > len(H)):
     print("TORTOISE WINS !!")
 
 
