@@ -6,7 +6,7 @@ while i < 6:
     i= i + 1
     x = y + x
 i=0
-print("/n")
+print("\n")
 while i < 6:
     x=x[:0] + x[1:]
     print(x)
